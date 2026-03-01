@@ -192,13 +192,11 @@ Multi-dataset validation
 Multi-class decision framework (Approve / Review / Reject)
 
 ## Installation
-git clone https://github.com/yourusername/loan-approval-mlp-vs-adaboost.git
+git clone https://github.com/FatjonaMurrani/loan-approval-mlp-vs-adaboost.git
 cd loan-approval-mlp-vs-adaboost
 pip install -r requirements.txt  
 
-## Run the Project
-python src/mlp_model.py
-python src/adaboost_model.py
+
 
 
 ## Author:
