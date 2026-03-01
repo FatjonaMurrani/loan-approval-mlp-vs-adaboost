@@ -18,32 +18,24 @@ Implement AdaBoost as a strong ML baseline.
 
 Compare both models using:
 
-Accuracy
-
-Precision
-
-Recall
-
-F1-score
-
-ROC-AUC
+Accuracy, Precision, Recall, F1-score, ROC-AUC
 
 Analyze differences between neural and ensemble learning approaches.
 
 ---
 ## Dataset
 
-Source: Public Kaggle Loan Approval Dataset
+**Source:** Public Kaggle Loan Approval Dataset
 
-Size: 148,670 applications
+**Size:** 148,670 applications
 
-Task: Binary Classification
+**Task:** Binary Classification
 
 0 → Approved
 
 1 → Denied
 
-Features Include:
+**Features Include:**
 
 Loan amount
 
@@ -103,48 +95,51 @@ Fixed random seed for reproducibility
 
 ## Models  
 
-                    1. Multilayer Perceptron (MLP)
+
+### 1. Multilayer Perceptron (MLP)
 
 Architecture:
 
-Input layer
+              - Input layer
 
-Hidden Layer 1: 64 neurons (ReLU)
+              - Hidden Layer 1: 64 neurons (ReLU)
 
-Dropout (0.2)
+              - Dropout (0.2)
 
-Hidden Layer 2: 32 neurons (ReLU)
+              - Hidden Layer 2: 32 neurons (ReLU)
 
-Dropout (0.2)
+              - Dropout (0.2)
 
-Output Layer: 1 neuron (Sigmoid)
+              - Output Layer: 1 neuron (Sigmoid)
 
 Training:
 
-Optimizer: Adam (lr = 0.001)
+              - Optimizer: Adam (lr = 0.001)
 
-Loss: Binary Crossentropy
+              - Loss: Binary Crossentropy
 
-Epochs: 10
+              - Epochs: 10
 
-Batch size: 64
+              - Batch size: 64
 
-Total parameters: 4,673
+              - Total parameters: 4,673
 
-                      2. AdaBoost Classifier
+### 2. AdaBoost Classifier
 
 Configuration:
 
-Base estimator: Decision Tree stump (max_depth=1)
+              - Base estimator: Decision Tree stump (max_depth=1)
 
-100 estimators
+              - 100 estimators
 
-Learning rate = 1.0
+              - Learning rate = 1.0
 
-Fixed random seed
+              - Fixed random seed
 
 #### Results
-MLP Performance
+
+*MLP Performance*
+
 | Metric    | Score  |
 | --------- | ------ |
 | Accuracy  | 98.32% |
@@ -153,7 +148,7 @@ MLP Performance
 | F1-score  | 96.68% |
 | ROC-AUC   | 0.9977 |
 
-AdaBoost Performance
+*AdaBoost Performance*
 | Metric    | Score  |
 | --------- | ------ |
 | Accuracy  | 98.99% |
